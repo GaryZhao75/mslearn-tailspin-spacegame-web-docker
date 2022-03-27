@@ -7,10 +7,10 @@ variables:
   tag: '$(Build.BuildId)'
 
 stages:
-- stage: 'Build'
-displayName: 'Build and push'
+  - stage: 'Build'
+  displayName: 'Build and push'
   jobs:  
-  - job: 'Build'
+    - job: 'Build'
     displayName: 'Build job'
     pool:
       vmImage: 'ubuntu-20.04'
